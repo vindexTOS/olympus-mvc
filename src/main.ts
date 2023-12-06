@@ -10,6 +10,6 @@ async function bootstrap() {
 
   app.useStaticAssets(join(__dirname, '../../', 'ClientBuild'));
   app.useGlobalPipes(new ValidationPipe());
-  await app.listen(process.env.PORT || 3000);
+  await app.listen(process.env.PORT || 80);
 }
 bootstrap();
